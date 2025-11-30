@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Music Bookmarks - Dark Theme</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="/css/style.css"/>
+</head>
+<body>
+  <div class="sidebar">
+    <div style="display: flex;"><strong style="font-size: 23px;">Swaraplex</strong><img src="./Images/logo_noBG.png" height="40px" alt=""></div>
+    <ul>
+      <li class="active">All Songs</li>
+    </ul>
+    
+    <!-- Social Handles Section -->
+    <div class="social-section">
+      <h3>Follow</h3>
+      <div class="social-links">
+        <a href="https://www.youtube.com/@SwaraPlex/?sub_confirmation=1" target="_blank" rel="noopener noreferrer" title="YouTube">
+          <i class="fab fa-youtube"></i>
+        </a>
+        <a href="https://www.instagram.com/swaraplex" target="_blank" rel="noopener noreferrer" title="Instagram">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://x.com/SwaraPlex" target="_blank" rel="noopener noreferrer" title="X (Twitter)" class="x-twitter-link">
+            <svg viewBox="0 0 24 24" fill="currentColor" class="x-twitter-icon">
+                <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24h-6.657l-5.07-6.614L2.306 21.75H-.456l7.738-8.835L0 2.25h6.826l4.959 6.361L17.6 2.25h.644zm-1.12 17.02h1.83L7.997 5.009H6.165l10.96 14.26z"/>
+            </svg>
+        </a>
+        <a href="https://www.facebook.com/swaraplex" target="_blank" rel="noopener noreferrer" title="FaceBook">
+          <i class="fab fa-facebook"></i>
+        </a>
+        <a href="https://in.pinterest.com/SwaraPlex" target="_blank" rel="noopener noreferrer" title="Pinterest">
+          <i class="fab fa-pinterest"></i>
+        </a>
+        <a href="https://www.snapchat.com/add/swaraplex" target="_blank" rel="noopener noreferrer" title="SnapChat">
+          <i class="fab fa-snapchat"></i>
+        </a>
+
+        <a href="https://www.linkedin.com/company/swaraplex/" target="_blank" rel="noopener noreferrer" title="linkedin">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="https://github.com/swaraplex/" target="_blank" rel="noopener noreferrer" title="github">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="https://www.tiktok.com/@swaraplex" target="_blank" rel="noopener noreferrer" title="tiktok">
+          <i class="fab fa-tiktok"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="main-content">
+    <header>
+      <input id="search" type="text" placeholder="Search music..." />
+      <span class="music-icon"><img src="./Images/logo_noBG.png" height="40px" alt=""></span>
+    </header>
+    <div id="bookmarks-list" class="bookmarks-grid"></div>
+  </div>
+  
+  <!-- YouTube Video Modal -->
+  <div id="video-modal" class="modal hidden">
+    <div class="modal-overlay"></div>
+    <div class="modal-content">
+      <button class="modal-close">&times;</button>
+      <div class="video-container">
+        <iframe 
+          id="video-iframe" 
+          class="yt-embed"
+          width="100%" 
+          height="100%" 
+          title="YouTube video player" 
+          frameborder="0" 
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+          allowfullscreen>
+        </iframe>
+      </div>
+    </div>
+  </div>
+
+  <script src="/js/app.js"></script>
+</body>
+</html>
